@@ -4,9 +4,7 @@ import Deck from '../Deck/Deck.js';
 import cardData from '../../cardData.js';
 import createAllCards from '../../createAllCards';
 
-
 class App extends Component {
-
   constructor() {
     super()
     this.state = {
