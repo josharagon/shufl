@@ -1,5 +1,5 @@
 import './App.css';
-import { Component } from 'react';
+import { React, Component } from 'react';
 import Deck from '../Deck/Deck.js';
 import cardData from '../../cardData.js';
 import createAllCards from '../../createAllCards';
