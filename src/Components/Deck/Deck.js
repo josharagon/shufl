@@ -1,14 +1,14 @@
 import Card from '../Card/Card.js';
 import './Deck.css';
 
-function Deck({cards, }) {
+function Deck({ cards, }) {
   const allCards = cards.map(card => {
     return (
-      <Card 
+      <Card
         value={card.value}
         suit={card.suit}
         color={card.color}
-        key={card.value+card.suit}
+        key={card.value + card.suit}
       />
     )
   })
