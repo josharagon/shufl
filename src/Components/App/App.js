@@ -10,13 +10,13 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      cards:[],
-      shuffleCounter:0
+      cards: [],
+      shuffleCounter: 0
     }
   }
 
   componentDidMount() {
-    this.setState({cards: createAllCards(cardData)})
+    this.setState({ cards: createAllCards(cardData) })
   }
 
   shuffleCards(cardArray) {
@@ -26,7 +26,7 @@ class App extends Component {
       cardArray[i] = cardArray[randomIndex];
       cardArray[randomIndex] = temp;
     }
-    this.setState({cards: cardArray, shuffleCounter: this.state.shuffleCounter+1})
+    this.setState({ cards: cardArray, shuffleCounter: this.state.shuffleCounter + 1 })
   }
 
   render() {
@@ -34,8 +34,8 @@ class App extends Component {
       <main>
         <h1>SHUFL</h1>
         <div className='buttons'>
-        <button onClick={() => this.shuffleCards(this.state.cards)}>Shuffle Deck</button>
-        <button onClick={() => {this.setState({shuffleCounter: 0})}}>Reset Shuffle Count</button>
+          <button onClick={() => this.shuffleCards(this.state.cards)}>Shuffle Deck</button>
+          <button onClick={() => { this.setState({ shuffleCounter: 0 }) }}>Reset Shuffle Count</button>
         </div>
         <h4 className='shuffle-counter'>Shuffle Count: {this.state.shuffleCounter}</h4>
         <Deck cards={this.state.cards} />

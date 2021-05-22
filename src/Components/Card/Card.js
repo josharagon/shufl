@@ -7,7 +7,7 @@ const Card = ({ value, suit, color }) => {
 
   return (
     <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
-      <div className='back' onClick={() => setFlipped(state => !state)}/>
+      <div className='back' onClick={() => setFlipped(state => !state)} />
       <div className={`card ${color}`} onClick={() => setFlipped(state => !state)}>
         <div className='top-left'>
           <div className='corner-val'>{value}</div>
