@@ -8,10 +8,7 @@ import createAllCards from '../../createAllCards'
 function App() {
   const [cards, setCards] = useState([])
   
-  useEffect(() => {
-    createAllCards(cardData, cards, setCards);
-  });
-
+console.log(    createAllCards(cardData))
   return(
     <main>
       <Deck cards={cards}/>
