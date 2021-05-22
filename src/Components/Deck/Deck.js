@@ -1,8 +1,7 @@
 import Card from '../Card/Card.js';
+import './Deck.css';
 
-
-function Deck({cards}) {
-
+function Deck({cards, }) {
   const allCards = cards.map(card => {
     return (
       <Card 
@@ -15,9 +14,9 @@ function Deck({cards}) {
   })
 
   return (
-    <>
-    {allCards}
-    </>
+    <div className='deck-holder'>
+      {allCards}
+    </div>
   )
 }
 
