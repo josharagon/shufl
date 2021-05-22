@@ -41,6 +41,10 @@ npm start
 ![wireframe1](https://gyazo.com/4d13985c94fe0bd77ba6b59feb8b7200.png)
 ![wireframe2](https://gyazo.com/d852d9e7e35003b29ec4c0074ad1a5c8.png)
 ![wireframe3](https://gyazo.com/82389ee9e2fdbaeece7c5329322de3c4.png)
+
+## Future Iterations
+* Add a shuffle animation for a cleaner looking design.
+
 ## Challenges
 * Animating a card shuffle in React (Seems way too complex for this)
 * Too many re renders bug (small for loop bug was the cause)
