@@ -32,10 +32,12 @@ class App extends Component {
   render() {
     return (
       <main>
-        <div>
+        <h1>SHUFL</h1>
+        <div className='buttons'>
         <button onClick={() => this.shuffleCards(this.state.cards)}>Shuffle Deck</button>
-        <h4 className='shuffle-counter'>Shuffle Count: {this.state.shuffleCounter}</h4>
+        <button onClick={() => {this.setState({shuffleCounter: 0})}}>Reset Shuffle Count</button>
         </div>
+        <h4 className='shuffle-counter'>Shuffle Count: {this.state.shuffleCounter}</h4>
         <Deck cards={this.state.cards} />
       </main>
     )

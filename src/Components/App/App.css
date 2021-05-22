@@ -1,5 +1,4 @@
 html, #root, body, main {
-  height: 100%;
   padding: 1%;
   background-color: rgb(50, 168, 101);
 }
@@ -8,6 +7,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -15,8 +15,13 @@ button {
   margin: 20px;
   border-radius: 5px;
   border: 0;
-  height: 2em;
-  width: 7em;
+  height: 3em;
+  width: 8em;
+}
+
+.buttons {
+  display: flex;
+  
 }
 
 button:hover {
@@ -24,6 +29,6 @@ button:hover {
   cursor: pointer;
 }
 
-.shuffle-counter {
+h1, .shuffle-counter {
   color: white;
 }
