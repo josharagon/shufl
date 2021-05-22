@@ -1,5 +1,6 @@
 import './App.css';
-import { useState, useEffect, Component } from 'react';
+import { Component } from 'react';
+import { useTransition, animated } from 'react-spring';
 import Deck from '../Deck/Deck.js';
 import cardData from '../../cardData.js';
 import createAllCards from '../../createAllCards'

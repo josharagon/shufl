@@ -1,9 +1,11 @@
 html, #root, body, main {
   height: 100%;
+  padding: 1%;
+  background-color: seagreen;
 }
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
