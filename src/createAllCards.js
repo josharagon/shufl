@@ -1,4 +1,4 @@
-export default function (data) {
+function createAllCards(data) {
   let cardArr = [];
   let id = 1;
   for(let s = 0; s < data.suits.length; s++) {
@@ -15,3 +15,5 @@ export default function (data) {
   }
   return cardArr
 }
+
+export default createAllCards;
