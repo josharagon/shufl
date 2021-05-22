@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Deck from '../Deck/Deck.js';
 import Card from '../Card/Card.js';
@@ -7,12 +7,14 @@ import createAllCards from '../../createAllCards'
 
 function App() {
   const [cards, setCards] = useState([])
-
-  createAllCards(cardData, cards, setCards);
+  
+  useEffect(() => {
+    createAllCards(cardData, cards, setCards);
+  });
 
   return(
     <main>
-      Deck
+      <Deck cards={cards}/>
     </main>
   )
 }
