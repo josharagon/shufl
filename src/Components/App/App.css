@@ -1,11 +1,29 @@
 html, #root, body, main {
   height: 100%;
   padding: 1%;
-  background-color: seagreen;
+  background-color: rgb(50, 168, 101);
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0;
+  height: 2em;
+  width: 7em;
+}
+
+button:hover {
+  background-color: rgb(119, 119, 119);
+  cursor: pointer;
+}
+
+.shuffle-counter {
+  color: white;
 }

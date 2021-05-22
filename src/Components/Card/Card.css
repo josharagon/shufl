@@ -8,6 +8,10 @@
   margin: .25em;
 }
 
+.card,.back, :hover {
+  cursor: pointer;
+}
+
 .red {
   color: rgb(194, 0, 0);
 }

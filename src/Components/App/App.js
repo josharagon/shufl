@@ -2,14 +2,16 @@ import './App.css';
 import { Component } from 'react';
 import Deck from '../Deck/Deck.js';
 import cardData from '../../cardData.js';
-import createAllCards from '../../createAllCards'
+import createAllCards from '../../createAllCards';
+
 
 class App extends Component {
 
   constructor() {
     super()
     this.state = {
-      cards:[]
+      cards:[],
+      shuffleCounter:0
     }
   }
 
@@ -24,13 +26,16 @@ class App extends Component {
       cardArray[i] = cardArray[randomIndex];
       cardArray[randomIndex] = temp;
     }
-    this.setState({cards: cardArray})
+    this.setState({cards: cardArray, shuffleCounter: this.state.shuffleCounter+1})
   }
 
   render() {
     return (
       <main>
-        <button onClick={() => this.shuffleCards(this.state.cards)}>Shuffle</button>
+        <div>
+        <button onClick={() => this.shuffleCards(this.state.cards)}>Shuffle Deck</button>
+        <h4 className='shuffle-counter'>Shuffle Count: {this.state.shuffleCounter}</h4>
+        </div>
         <Deck cards={this.state.cards} />
       </main>
     )

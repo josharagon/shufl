@@ -1,8 +1,7 @@
 import Card from '../Card/Card.js';
-import './Deck.css'
+import './Deck.css';
 
-function Deck({cards}) {
-
+function Deck({cards, }) {
   const allCards = cards.map(card => {
     return (
       <Card 
