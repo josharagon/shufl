@@ -7,6 +7,10 @@
   box-shadow: #00000069 0px 1px 6px 0px;
 }
 
+.red {
+  color: rgb(194, 0, 0);
+}
+
 .top-left {
   position: absolute;
   top: 0.5em;
