@@ -6,12 +6,12 @@ function Card() {
   return (
     <div className='card'>
       <div className='top-left'>
-        <p>4</p>
-        <p>❤️</p>
+        <div className='corner-val'>4</div>
+        <div className='corner-suite'>♠︎</div>
       </div>
       <div className='bottom-right'>
-        <p>4</p>
-        <p>❤️</p>
+        <div className='corner-val'>4</div>
+        <div className='corner-suite'>♠︎</div>
       </div>
     </div>
   )
