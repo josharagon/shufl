@@ -1,17 +1,17 @@
 import './Card.css'
 
 
-function Card() {
+function Card({ value, suit, color }) {
 
   return (
-    <div className='card'>
+    <div className={`card ${color}`}>
       <div className='top-left'>
-        <div className='corner-val'>4</div>
-        <div className='corner-suite'>♠︎</div>
+        <div className='corner-val'>{value}</div>
+        <div className='corner-suite'>{suit}</div>
       </div>
       <div className='bottom-right'>
-        <div className='corner-val'>4</div>
-        <div className='corner-suite'>♠︎</div>
+        <div className='corner-val'>{value}</div>
+        <div className='corner-suite'>{suit}</div>
       </div>
     </div>
   )
