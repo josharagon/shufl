@@ -1,19 +1,27 @@
 import './Card.css'
+import ReactCardFlip from 'react-card-flip';
+import { useState } from 'react';
+import backCard from '../../cardback.png';
 
-
-function Card({ value, suit, color }) {
+const Card = ({ value, suit, color }) => {
+  const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className={`card ${color}`}>
-      <div className='top-left'>
-        <div className='corner-val'>{value}</div>
-        <div className='corner-suite'>{suit}</div>
+    <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
+      <div className={`card ${color}`} onClick={() => setFlipped(state => !state)}>
+        <div className='top-left'>
+          <div className='corner-val'>{value}</div>
+          <div className='corner-suite'>{suit}</div>
+        </div>
+        <div className='bottom-right'>
+          <div className='corner-val'>{value}</div>
+          <div className='corner-suite'>{suit}</div>
+        </div>
       </div>
-      <div className='bottom-right'>
-        <div className='corner-val'>{value}</div>
-        <div className='corner-suite'>{suit}</div>
+
+      <div className='back' onClick={() => setFlipped(state => !state)}>
       </div>
-    </div>
+    </ReactCardFlip>
   )
 }
 

@@ -12,6 +12,18 @@
   color: rgb(194, 0, 0);
 }
 
+.back {
+  background-image:url("https://opengameart.org/sites/default/files/card%20back%20purple.png");
+  background-size: contain;
+  width: 5em;
+  height: 7em;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: #00000069 0px 1px 6px 0px;
+  margin: .25em;
+}
+
+
 .top-left {
   position: absolute;
   top: 0.5em;
